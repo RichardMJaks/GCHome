@@ -1,3 +1,18 @@
+:root {
+    /* Orange */
+    --orange: #ffa500;
+    --lightorange: #ffbd43;
+    --darkorange: #df9100;
+
+    /* White */
+    --white: #efefef;
+    --darkwhite: #cecece;
+
+    /* Black */
+    --black: #131313;
+    --lightblack: #353535;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -9,63 +24,93 @@ html, body {
     font-weight: bolder;
 }
 
-.bg {
+.wrapper {
+    margin: 0;
+    padding: 0;
+
     width: 100%;
     height: 100%;
+
+    position: absolute;
+}
+
+.panel {
+    position: relative;
+    width: auto;
+
+    padding: 5px;
+
+    text-align: center;
+
+    z-index: -1;
+
+    background-color: #131313;
+    border-radius: 10px;
+
+    color: var(--white);
+}
+
+.start {
+    height: 100%;
+    position: fixed;
+    margin-top: 30px;
+}
+
+.appearing {
+    margin-top: 55%;
+    background-color: var(--lightblack);
+}
+
+.bg {
+    position: fixed;
+    z-index: -1000;
+
     background-color: #efefef;
 }
 
 .topbar {
-    height: 7%;
+    position: fixed;
+    z-index: 0;
+    margin: 0;
     padding: 0;
+
+    width: 100%;
+    height: 30px;
+
+    overflow: hidden;
+
+    background-color: var(--orange);
+}
+
+.topbar img, .topbar a {
     margin: 0;
 
-    background-color: #ffb700;
-
-    align-items: left;
-
-    transition-duration: 0.4s;
+    height: 100%;
+    width: auto;
 }
 
 .topbar button {
-    height: 100%;
-    margin: 0px;
-    padding: 12px 30px 12px 30px;
-    cursor: pointer;
+    display: inline;
+    margin: 0;
+    padding: 2px 4px;
     transition-duration: 0.4s;
-    float: left;
 
-    background-color: #ffb700;
+    height: 100%;
 
-    border: 1px solid #ffd466;
+    float: right;
 
-    z-index: -1;
-
-    color: #efefef;
-    text-align: center;
-    font-size: 10px;
-
+    background-color: var(--orange);
+    
+    border: 0;
+    border-left: 2px solid var(--darkorange);
 }
 
 .topbar button:hover {
-    background-color: #ffd466;
+    background-color: var(--lightorange);
 }
 
-.topbar img {
-    height: 100%;
-    width: auto;
-    float: left;
-    transition-duration: 0.2s;
-}
-
-.topbar img:hover {
-    box-shadow: 1px 3px 5px lightgrey;
-}
-
-.pc-container {
-    max-height: 100px;
-    padding: 20% 20% 20% 20%;
-
-    font-size: 40px;
-    text-align: center;
+.gallery img{
+    display: inline;
+    float: center;
+    margin: 2% 6%;
 }
