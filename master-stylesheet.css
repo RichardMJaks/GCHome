@@ -34,52 +34,6 @@ html, body {
     position: absolute;
 }
 
-.panel {
-    position: relative;
-    width: 100%;
-
-    padding: 5px;
-
-    text-align: center;
-
-    z-index: -1;
-
-    background-color: #131313;
-    border-radius: 10px;
-
-    color: var(--white);
-}
-
-.start {
-    height: 100%;
-    position: fixed;
-    margin-top: 30px;
-
-    padding: auto;
-    border-radius: 0;
-}
-
-#title {
-    position: absolute;
-    top: 35%;
-    left: 40%;
-
-    font-size: 40px;
-}
-
-
-.appearing {
-    margin-top: 55%;
-    background-color: var(--lightblack);
-}
-
-.bg {
-    position: fixed;
-    z-index: -1000;
-
-    background-color: #efefef;
-}
-
 .topbar {
     position: fixed;
     z-index: 0;
@@ -119,10 +73,4 @@ html, body {
 
 .topbar button:hover {
     background-color: var(--lightorange);
-}
-
-.gallery img{
-    display: inline;
-    float: center;
-    margin: 2% 6%;
 }
