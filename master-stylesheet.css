@@ -1,16 +1,21 @@
 :root {
-    /* Orange */
-    --orange: #ffa500;
-    --lightorange: #ffbd43;
-    --darkorange: #df9100;
+    /* Primary */
+    --primary: #ffa500;
+    --light-primary: #ffbd43;
+    --dark-primary: #df9100;
+
+    /* Secondary */
+    --secondary: #42bcff;
+    --light-secondary: #6ecafd;
+    --dark-secondary: #39a0d9;
 
     /* White */
     --white: #efefef;
-    --darkwhite: #cecece;
+    --lightgray: #cecece;
 
     /* Black */
     --black: #131313;
-    --lightblack: #353535;
+    --darkgray: #353535;
 }
 
 html, body {
@@ -45,7 +50,7 @@ html, body {
 
     overflow: hidden;
 
-    background-color: var(--orange);
+    background-color: var(--primary);
 }
 
 .topbar img, .topbar a {
@@ -65,12 +70,11 @@ html, body {
 
     float: right;
 
-    background-color: var(--orange);
-    
+    background-color: var(--primary);
     border: 0;
-    border-left: 2px solid var(--darkorange);
+    border-left: 2px solid var(--dark-primary);
 }
 
 .topbar button:hover {
-    background-color: var(--lightorange);
+    background-color: var(--light-primary);
 }

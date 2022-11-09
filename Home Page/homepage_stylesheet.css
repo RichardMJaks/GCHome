@@ -1,39 +1,3 @@
-:root {
-    /* Orange */
-    --orange: #ffa500;
-    --lightorange: #ffbd43;
-    --darkorange: #df9100;
-
-    /* White */
-    --white: #efefef;
-    --darkwhite: #cecece;
-
-    /* Black */
-    --black: #131313;
-    --lightblack: #353535;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-}
-
-.wrapper {
-    margin: 0;
-    padding: 0;
-
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-}
-
 .panel {
     position: relative;
     width: 100%;
@@ -44,7 +8,7 @@ html, body {
 
     z-index: -1;
 
-    background-color: #131313;
+    background-color: var(--black);
     border-radius: 10px;
 
     color: var(--white);
@@ -70,56 +34,17 @@ html, body {
 
 .appearing {
     margin-top: 55%;
-    background-color: var(--lightblack);
+    background-color: var(--darkgray);
 }
 
 .bg {
     position: fixed;
     z-index: -1000;
 
-    background-color: #efefef;
+    background-color: var(--white);
 }
 
-.topbar {
-    position: fixed;
-    z-index: 0;
-    margin: 0;
-    padding: 0;
 
-    width: 100%;
-    height: 30px;
-
-    overflow: hidden;
-
-    background-color: var(--orange);
-}
-
-.topbar img, .topbar a {
-    margin: 0;
-
-    height: 100%;
-    width: auto;
-}
-
-.topbar button {
-    display: inline;
-    margin: 0;
-    padding: 2px 4px;
-    transition-duration: 0.4s;
-
-    height: 100%;
-
-    float: right;
-
-    background-color: var(--orange);
-    
-    border: 0;
-    border-left: 2px solid var(--darkorange);
-}
-
-.topbar button:hover {
-    background-color: var(--lightorange);
-}
 
 .gallery img{
     display: inline;
