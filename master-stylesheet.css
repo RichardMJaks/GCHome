@@ -1,3 +1,4 @@
+/* Coloring properties */
 :root {
     /* Primary */
     --primary: #ffa500;
@@ -28,7 +29,7 @@ html, body {
     font-style: normal;
     font-weight: bolder;
 }
-
+/* Wrappers */
 .wrapper {
     margin: 0;
     padding: 0;
@@ -38,7 +39,45 @@ html, body {
 
     position: absolute;
 }
+.content-wrapper {
+    position: relative;
+    margin-top: 55%;
+    width: inherit;
+}
 
+/* Panels */
+.main {
+    position: fixed;
+    z-index: -1;
+
+    /* Center title text to screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    color: var(--white);
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: var(--black);
+}
+.panel {
+    width: auto;
+    height: auto;
+
+    background-color: var(--darkgray);
+
+    color: var(--white);
+}
+
+/* Topbar config */
 .topbar {
     position: fixed;
     z-index: 0;
@@ -52,14 +91,12 @@ html, body {
 
     background-color: var(--primary);
 }
-
 .topbar img, .topbar a {
     margin: 0;
 
     height: 100%;
     width: auto;
 }
-
 .topbar button {
     display: inline;
     margin: 0;
@@ -74,7 +111,6 @@ html, body {
     border: 0;
     border-left: 2px solid var(--dark-primary);
 }
-
 .topbar button:hover {
     background-color: var(--light-primary);
 }
