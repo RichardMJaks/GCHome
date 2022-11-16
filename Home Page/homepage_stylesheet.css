@@ -1,53 +1,101 @@
-.panel {
+.content-wrapper {
     position: relative;
-    width: 100%;
-
-    padding: 5px;
-
-    text-align: center;
-
-    z-index: -1;
-
-    background-color: var(--lightgray);
-    border-radius: 10px;
-
-    color: var(--white);
+    margin-top: 55%;
+    width: inherit;
 }
 
-.start {
-    height: 100%;
+.main {
     position: fixed;
-    margin-top: 30px;
+    z-index: -1;
 
-    padding: auto;
-    border-radius: 0;
+    /* Center title text to screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    color: var(--white);
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
 
     background-color: var(--black);
 }
 
-#title {
-    position: absolute;
-    top: 35%;
-    left: 40%;
+.panel {
+    width: auto;
+    height: auto;
 
-    font-size: 40px;
-}
-
-
-.appearing {
-    margin-top: 55%;
     background-color: var(--darkgray);
+
+    color: var(--white);
 }
 
-.bg {
-    position: fixed;
-    z-index: -1000;
-
-    background-color: var(--white);
+#game-gallery {
+    overflow: auto;
+    white-space: nowrap;
 }
 
-.gallery img{
-    display: inline;
-    float: center;
-    margin: 2% 6%;
+.game {
+    min-width: 200px;
+    min-height: 370px;
+    display: inline-block;
+    margin: 5px 20px;
+
+    border: 2px solid var(--black);
+}
+
+.game img {
+    float: top;
+}
+
+.game span {
+    display: block;
+    font-weight: normal;
+}
+
+.news-block {
+    min-width: 200px;
+    max-width: 200px;
+    height: 355px;
+    display: inline-block;
+    margin: 5px 20px;
+    
+    border: 2px solid var(--black);
+}
+
+.news-content {
+    height: 155px;
+    width: 200px;
+
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+
+.news-block h5 {
+    display: block;
+    float: top;
+
+    margin: 2px;
+}
+
+.news-block img {
+    float: top;
+}
+
+.news-block p {
+    padding: 5px;
+    margin: 0;
+    font-weight: normal;
+}
+
+#news-header {
+    margin: 0;
+    padding: 2px;
+    padding-top: 10px;
 }
