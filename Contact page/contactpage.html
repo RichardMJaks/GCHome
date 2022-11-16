@@ -5,10 +5,11 @@
         <title>Placeholder: To develop a game well</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../master-stylesheet.css">
         <link rel="stylesheet" href="contactpage_stylesheet.css">
     </head>
     <body>
-        <div class="bg">
+        <div class="wrapper">
             <div class="topbar">
                 <a href="main.html"><img name="logo" src="Images/logo-Placeholder.png" alt="Placeholder logo"></a>
                 <a href="aboutpage.html">
@@ -18,10 +19,59 @@
                     <button type="button">CONTACT US</button>
                 </a>
                 </div>
-            <div class="pc-container">
+            <div class="paneel start">
                 <div class="text">
-                    <p>PLACEHOLDER</p>
-                    <p>Contact page</p>
+                    <p id="pealkiri">Contact page</p>
+                </div>
+            </div>
+            <div class="paneel appearing FAQ">
+                <p id="pealkiri2">FAQ</p>
+                <li>
+                    Lorem ipsum dolor sit amet
+                </li>
+                <li>
+                    consectetur adipiscing elit
+                </li>
+                <li>
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </li>
+                <br>
+                
+                <div class="form-body">
+
+                    <div id="form">
+                    <h3 id="pealkiri2">Contact us</h3>
+                
+                    <form id="form" class="form-class" method="post">
+                        
+                        <div class="form-group">
+                            <label for="Name">Your name</label>
+                            <div class="form-input-group">
+                                <input type="text" id="Name" name="Name" required>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="Email">Your email address</label>
+                            <div class="form-input-group">
+                                <input type="email" id="Email" name="Email"required>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="Message">Your message</label>
+                            <div class="form-input-group">
+                                <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <button type="submit">Send Message</button>
+                        </div>
+                
+                    </form>
+                    </div>
+                
                 </div>
             </div>
         </div>

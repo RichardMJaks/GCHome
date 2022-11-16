@@ -1,0 +1,80 @@
+:root {
+    /* Primary */
+    --primary: #ffa500;
+    --light-primary: #ffbd43;
+    --dark-primary: #df9100;
+
+    /* Secondary */
+    --secondary: #42bcff;
+    --light-secondary: #6ecafd;
+    --dark-secondary: #39a0d9;
+
+    /* White */
+    --white: #efefef;
+    --lightgray: #cecece;
+
+    /* Black */
+    --black: #131313;
+    --darkgray: #353535;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.topbar {
+    position: fixed;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 30px;
+
+    overflow: hidden;
+
+    background-color: var(--primary);
+}
+
+.topbar img, .topbar a {
+    margin: 0;
+
+    height: 100%;
+    width: auto;
+}
+
+.topbar button {
+    display: inline;
+    margin: 0;
+    padding: 2px 4px;
+    transition-duration: 0.4s;
+
+    height: 100%;
+
+    float: right;
+
+    background-color: var(--primary);
+    border: 0;
+    border-left: 2px solid var(--dark-primary);
+}
+
+.topbar button:hover {
+    background-color: var(--light-primary);
+}
