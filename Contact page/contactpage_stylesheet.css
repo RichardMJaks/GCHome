@@ -38,7 +38,15 @@
 #pealkiri2 {
     margin-top: 1%;
     text-align: center;
-
+    font-size: 40px;
+    padding: 30px;
+    border: 5px solid var(--black);
+    background-color: var(--primary);
+    color: var(--black);
+}
+#pealkiri3 {
+    margin-top: 1%;
+    text-align: center;
     font-size: 40px;
 }
 .appearing {
@@ -50,6 +58,20 @@
     text-align: left;
     color: var(--white);
     font-size: 30px;
+    
+}
+
+.FAQ-vastus{
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.FAQ-küsimus{
+    padding: 30px;
+    border: 5px solid var(--black);
+    background-color: var(--primary);
+    color: black;
+
 }
 .form-body {
     margin: 0;
