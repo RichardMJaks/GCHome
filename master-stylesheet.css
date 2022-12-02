@@ -40,9 +40,10 @@ html, body {
     position: absolute;
 }
 .content-wrapper {
-    position: relative;
-    margin-top: 55%;
+    position: fixed;
     width: inherit;
+    height: 120%;
+    overflow: auto;
 }
 
 /* Panels */
@@ -75,6 +76,12 @@ html, body {
     background-color: var(--darkgray);
 
     color: var(--white);
+}
+.scrollable {
+    position: absolute;
+}
+.unscrollable {
+    position: fixed;
 }
 
 /* Topbar config */
