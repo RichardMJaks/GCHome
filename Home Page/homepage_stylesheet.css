@@ -1,41 +1,111 @@
+.bgvid {
+    background-image: url("Images/background-video.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Image Placeholder */
+.imgp {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--light-primary);
+}
+/* Tervitus */
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 10vh;
+
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+
+    background-color: var(--darkgray);
+}
+#welcome span {
+    color: var(--primary);
+}
 /* Mängude paneel */
 #game-gallery {
     overflow: auto;
     white-space: nowrap;
+
+    background-color: var(--darkergray);
+
+    box-shadow: 0px 2px 10px black inset;
+    z-index: 2;
 }
 .game {
     display: inline-block;
 
-    width: 200px;
-    height: 370px;
+    width: 250px;
 
-    margin: 5px 20px;
+    margin: 10px 40px;
 
-    border: 2px solid var(--black);
+    background-color: var(--darkgray);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    box-shadow: 0px 2px 10px black;
+
+    z-index: 1;
 }
-.game img {
+.game .imgp {
     float: top;
+    width: 250px;
+    height: 350px;
+    margin: 0;
+    padding: 0;
 }
-.game span {
-    display: block;
+.game div {
+    padding: 4px 10px;
+}
+.game p {
+    display: inline-block;
+
+    width: 250px;
+
+    margin: 0px;
+    margin-bottom: 4px;
 
     font-weight: normal;
+    font-size: 21px;
+    color: var(--white);
+}
+.game span {
+    float: right;
+
+    margin-bottom: 6px;
+    padding: 4px;
+
+    background-color: var(--primary);
+    border-radius: 5px;
+
+    font-weight: bold;
+    color: var(--black);
 }
 
 /* Uudiste paneel */
 .news-block {
     display: inline-block;
 
-    width: 300px;
-    height: 500px;
+    margin: 2vh;
 
-    margin: 10px 15px;
-    
-    border: 2px solid var(--black);
+    box-shadow: 0px 2px 10px black;
+}
+.news-block, .news-block .imgp, .news-block .imgp img, .news-content {    
+    width: 29vw;
+}
+.news-block .imgp, .news-block .imgp img {
+    height: 300px;
 }
 .news-content {
-    height: 230px;
-    width: 300px;
+    height: 48px;
 
     float: left;
 
@@ -45,11 +115,14 @@
 .news-block h5 {
     display: block;
 
-    margin: 2px;
+    margin: 4px 10px;
+
+    font-weight: normal;
+    font-size: 21px;
 
     float: top;
 }
-.news-block img {
+.news-block .imgp {
     float: top;
 }
 .news-block p {
@@ -57,9 +130,4 @@
     margin: 0;
 
     font-weight: normal;
-}
-#news-header {
-    margin: 0;
-    padding: 2px;
-    padding-top: 10px;
 }

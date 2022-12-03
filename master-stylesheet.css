@@ -2,8 +2,8 @@
 :root {
     /* Primary */
     --primary: #ffa500;
-    --light-primary: #ffbd43;
-    --dark-primary: #df9100;
+    --light-primary: #e5ad47;
+    --dark-primary: #684300;
 
     /* Secondary */
     --secondary: #42bcff;
@@ -12,11 +12,13 @@
 
     /* White */
     --white: #efefef;
+    --white-invisible: rgba(239, 239, 239, 0);
     --lightgray: #cecece;
 
     /* Black */
     --black: #131313;
     --darkgray: #353535;
+    --darkergray: #222;
 }
 
 html, body {
@@ -40,10 +42,13 @@ html, body {
     position: absolute;
 }
 .content-wrapper {
-    position: fixed;
+    position: absolute;
     width: inherit;
-    height: 120%;
-    overflow: auto;
+    height: 100%;
+
+    margin-top: 100vh;
+
+    background-color: var(--black);
 }
 
 /* Panels */
@@ -63,31 +68,53 @@ html, body {
     padding: 0;
 
     color: var(--white);
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     text-transform: uppercase;
+    text-shadow: 5px 5px 10px #131313 ;
 
-    background-color: var(--black);
+    background-color: var(--darkgray);
+    background-blend-mode: multiply;
+}
+.main div {
+    margin-top: 200px;
+    opacity: 0;
 }
 .panel {
+    top: 100%;
     width: auto;
     height: auto;
 
+    margin: 4vh 2vh;
+    padding: 1vh;
+
+    border-radius: 10px;
     background-color: var(--darkgray);
 
     color: var(--white);
 }
-.scrollable {
-    position: absolute;
+.last {
+    border-radius: 0px;
+
+    font-size: 12px;
+    font-weight: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
 }
-.unscrollable {
-    position: fixed;
+.panel h1 {
+    margin: 0px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 /* Topbar config */
 .topbar {
     position: fixed;
-    z-index: 0;
+    z-index: 100;
     margin: 0;
     padding: 0;
 

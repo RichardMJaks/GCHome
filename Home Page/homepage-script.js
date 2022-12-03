@@ -1,53 +1,3 @@
-function PanelScroll() {
-    panels = $(".panel");
-
-    // Võtame paneeli ja sellele järgneva paneeli
-    let target = $(".scrollable")[0];
-    targetZ = target.style.zIndex;
-    let follow = document.getElementById(`panel-${Math.abs(targetZ)+1}`);
-    let drag = document.getElementById(`panel-${Math.abs(targetZ)-1}`);
-
-    toggleScrollable = (switchTo) => {
-        offset = $(switchTo).offset();
-        switchTo.style.top = "0px";
-        $(switchTo).offset(offset);
-        switchTo.classList.add("scrollable");
-        switchTo.classList.remove("unscrollable");
-
-        pos = $(target).offset().top;
-        target.style.top = `${pos}px`;
-        console.log(target.style.top);
-        target.classList.remove("scrollable");
-        target.classList.add("unscrollable");
-    }
-    
-    // Valitud paneeli muutmine
-    switcher = (switchTo) => {
-        minThreshold = 0;
-        for (let index = targetZ - 1; index > 0; index--) {
-            minThreshold += $(`#panel-${index}`).outerHeight() - 30;
-        }
-        maxThreshold = minThreshold + $(target).outerHeight();
-        console.log($(targetScroll).scrollTop() - minThreshold, target.id, maxThreshold - $(targetScroll).scrollTop());
-
-        if ($(targetScroll).scrollTop() < minThreshold || $(targetScroll).scrollTop() > maxThreshold) {
-            toggleScrollable(switchTo);
-        }
-        
-    }
-    // Tagasi kerimine
-    if (drag != null) {
-        switcher(drag);
-    }
-
-    // Edasi kerimine
-    if (follow != null) {
-        switcher(follow);
-    }
-
-
-}
-
 function ParagraphClipper() {
     // Sauce: https://jsfiddle.net/k5VET/ 
     var p=$('.news-content p');
@@ -70,14 +20,21 @@ function ParagraphClipper() {
 // Kutsume kõik automaatsed funktsioonid
 window.scrollTo(0,0);
 ParagraphClipper();
+$(".main div").animate({
+    opacity: 1,
+    marginTop: 0
+}, 2000, function() {});
 
-// Asetab paneelid õigetesse kohtadesse
-$(".panel").offset(function(i, coords) {
-    return {top: $($(".panel")[i]).offset().top + 1000, left: $($(".panel")[i]).offset().left}
-});
+// Richard M Jaks leiutis
+// Arvutab kui lai uudis saab olla
+// n - mitu uudist ühel real
+newsBlockWidth = (n) => {
+    p = $(".panel").css("padding");
+    s = $($(".panel")[0]).width();
+    m = $($(".news-block")[0]).css("margin");
 
-let contentWrapper = $(".content-wrapper")[0];
-contentWrapper.style.height = `${$("content-wrapper").outerHeight()}px`;
+    return (s - p - m * n) / n;
+}
 
-targetScroll = $(".content-wrapper")[0]
-$(targetScroll).scroll(function() {PanelScroll()});
+w = newsBlockWidth(3);
+$(".news-block, .news-block img, .news-content").width(w);
