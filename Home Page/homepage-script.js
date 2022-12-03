@@ -16,25 +16,4 @@ function ParagraphClipper() {
     }
 }
 
-
-// Kutsume kõik automaatsed funktsioonid
-window.scrollTo(0,0);
 ParagraphClipper();
-$(".main div").animate({
-    opacity: 1,
-    marginTop: 0
-}, 2000, function() {});
-
-// Richard M Jaks leiutis
-// Arvutab kui lai uudis saab olla
-// n - mitu uudist ühel real
-newsBlockWidth = (n) => {
-    p = $(".panel").css("padding");
-    s = $($(".panel")[0]).width();
-    m = $($(".news-block")[0]).css("margin");
-
-    return (s - p - m * n) / n;
-}
-
-w = newsBlockWidth(3);
-$(".news-block, .news-block img, .news-content").width(w);

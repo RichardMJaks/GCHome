@@ -1,88 +1,64 @@
-.bg {
-    width: 100%;
-    height: 100%;
-    background-color: var(--white);
-    position: fixed;
+.bgvid {
+    background-image:url('https://media.giphy.com/media/l0MYJAzu5RTVSGeiY/giphy.gif'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
 }
 
-.paneel {
-    position: relative;
-    width: 99.2%;
-
-    padding: 5px;
-
-    text-align: center;
-
-    z-index: -1;
-    background-color: var(--black);
+/* FAQ */
+.faq {
+    padding: 10px;
     border-radius: 10px;
 
-    color: var(--white);
-}
+    background-color: var(--darkergray);
 
-.start {
-    height: 100%;
-    position: fixed;
-    margin-top: 30px;
-    background-image:url('https://media.giphy.com/media/l0MYJAzu5RTVSGeiY/giphy.gif'); background-repeat:repeat;
-    background-size: 100%;
-    padding: auto;
-    border-radius: 0;
+    box-shadow: 0px 2px 10px black inset;
+
+    font-weight: 100;
+
+    overflow: auto;
 }
-#pealkiri {
-    margin-top: 25%;
-    text-align: center;
-    color: var(--black);
-    font-size: 60px;
-}
-#pealkiri2 {
-    margin-top: 1%;
-    text-align: center;
-    font-size: 40px;
-    padding: 30px;
-    border: 5px solid var(--black);
-    background-color: var(--primary);
-    color: var(--black);
-}
-#pealkiri3 {
-    margin-top: 1%;
-    text-align: center;
-    font-size: 40px;
-}
-.appearing {
-    margin-top: 55%;
+.question {
+    float: left;
+
+    height: 20vh;
+    width: 45vw;
+    padding: 10px;
+    margin: 10px;
+
     background-color: var(--darkgray);
-}
 
-.FAQ {
-    text-align: left;
-    color: var(--white);
-    font-size: 30px;
-    
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px black;
 }
-
-.FAQ-vastus{
-    margin-left: 40px;
-    font-size: 20px;
-}
-
-.FAQ-küsimus{
-    padding: 30px;
-    border: 5px solid var(--black);
-    background-color: var(--primary);
-    color: black;
+.faq h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary);
 
 }
+.answer {
+    float: left;
+    padding: 10px;
+
+    font-weight: 300;
+
+    border-radius: 10px;
+    text-justify: distribute-all-lines;
+}
+
+/* Form */
 .form-body {
     margin: 0;
+    padding: 30px;
+    padding-bottom: 10px;
+
+    background-color: var(--darkgray);
+
     font-size: 18px;
     line-height: 1;
     color: var(--white);
-    text-align: center;
-    background-color: var(--darkgray);
-    padding: 30px;
-    padding-bottom: 10px;
-    border: 5px solid var(--primary);
-}
 
+    text-align: center;
+}
 

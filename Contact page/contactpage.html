@@ -14,67 +14,75 @@
     <body>
         <div class="wrapper">
             <div class="topbar">
-                <a href="main.html"><img name="logo" src="Images/logo-Placeholder.png" alt="Placeholder logo"></a>
-                <a href="aboutpage.html">
-                    <button type="button">ABOUT US</button>
-                </a>   
-                <a href="contactpage.html">    
-                    <button type="button">CONTACT US</button>
-                </a>
-                </div>
-            <div class="paneel start">
-                <div class="text">
-                    <p id="pealkiri">CONTACT</p>
+                <a href="../Home Page/main.html"><img src="../Home Page/Images/logo-Placeholder.png"></a>
+                <a href="../About Page/about.html"><button type="button">ABOUT US</button></a>
+                <a href="../Contact Page/contactpage.html"><button type="button">CONTACT US</button></a>
+            </div>
+
+            <div class="main bgvid">
+                <div>
+                    <p>CONTACT</p>
                 </div>
             </div>
-            <div class="paneel appearing FAQ">
-                <p id="pealkiri2">FAQ</p>
-                <div class="FAQ-küsimus">   
-                    <li>
-                        What kind of games are you making?
-                    </li>
-                    <div class="FAQ-vastus">
-                        <p>We have developed many different types of games over the years, from shooters to RPG-s. We are constantly trying to make every project better than the last one.</p>
+            <div class="content-wrapper">
+                <div class="panel">
+                    <h1>FAQ</h1>
+                    <div class="faq">   
+                        <div class="question">
+                            <h2>What are the main values of your company?</h2>
+                            <div class="answer">
+                                <p>For games we are always quality over quantity. Some games thus get on the shelves really fast, but more complex challenges may take a lot of time.</p>
+                                <p>For our workers we primarily value 2 things: person and skill. How do you act around others? Are you talkative, friendly, sociable? Do you bring good atmosphere to the workplace? What can you do with 10 fingers and a keyboard? That's what's the most important to us.</p>
+                            </div> 
+                        </div>
+                        <div class="question">
+                            <h2>I forgot my password. What should i do?</h2>
+                            <div class="answer">
+                                <p>If you have forgotten your password you can always use the forgotten password button!</p>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h2>How about if I can't access my email?</h2>
+                            <div class="answer">
+                                <p>In that case contact our customer support with your email. They will ask you a couple of questions to prove your identity, and once everything goes smoothly you'll get your account back in no time!</p>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h2>My game doesn't work correctly. What should I do about it?</h2>
+                            <div class="answer">
+                                <p>We have a handy contact form you can use down below! Use it to report anything from simple problems like NPC walks too slow to "HELP MY CHARACTER IS SPAZZING OUT AND MAP IS COMPLETELY GLITCHED!!!!!"</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <br> 
-                <div class="FAQ-küsimus">  
-                    <li>
-                        I lost access to my account. What sould i do?
-                    </li>
-                    <div class="FAQ-vastus">
-                        <p>If you have forgotten your password please contact our customer support.</p>
+
+                <div class="panel">
+                    <div class="form-body">
+                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Images/smiley.gif" alt="Smiley" width="32" height="32">
+                        <h1>Contact us</h1>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="401aab4f-9b18-487c-9160-8d2eaf32492d">
+                            <p>Enter your email</p>
+                            <input type="email" name="email" required>
+                            <p>Enter your name</p>
+                            <input type="text" name="First Name" required>
+                            <p>Enter your phone number</p>
+                            <input type="text" name="Phone Number" required>
+                            <p>Enter a message</p>
+                            <textarea name="message" required></textarea>
+                            <br>
+                            <button type="submit">Submit Form</button>                        
+                        </form>
                     </div>
-                </div> 
-                <br>
-                <div class="FAQ-küsimus">  
-                    <li>
-                        What are your company's main values?
-                    </li>
-                    <div class="FAQ-vastus">
-                        <p>Precision and excellence have always been the main values at our company. These are also the traits that we expect from our employees. </p>
-                    </div>
-                </div>  
-                <br>
-                <div class="form-body">
-                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Images/smiley.gif" alt="Smiley" width="32" height="32">
-                    <p id="pealkiri3">Contact us</p>
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="401aab4f-9b18-487c-9160-8d2eaf32492d">
-                        <p>Enter your email</p>
-                        <input type="email" name="email" required>
-                        <p>Enter your name</p>
-                        <input type="text" name="First Name" required>
-                        <p>Enter your phone number</p>
-                        <input type="text" name="Phone Number" required>
-                        <p>Enter a message</p>
-                        <textarea name="message" required></textarea>
-                        <br>
-                        <button type="submit">Submit Form</button>
-                    
-                    </form>
+                </div>
+
+                <div class="panel last">
+                    <div>See leht on loodud kolme TÜ tudengi poolt. All rights reserved.</div>
                 </div>
             </div>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../master-script.js"></script>
     </body>
 </html>
