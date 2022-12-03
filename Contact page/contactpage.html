@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta encoding="UTF-8">
+        <title>Placeholder: To develop a game well</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../master-stylesheet.css">
+        <link rel="stylesheet" href="contactpage_stylesheet.css">
+        <script src="contactpage-js.js"></script>
+
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="topbar">
+                <a href="main.html"><img name="logo" src="Images/logo-Placeholder.png" alt="Placeholder logo"></a>
+                <a href="aboutpage.html">
+                    <button type="button">ABOUT US</button>
+                </a>   
+                <a href="contactpage.html">    
+                    <button type="button">CONTACT US</button>
+                </a>
+                </div>
+            <div class="paneel start">
+                <div class="text">
+                    <p id="pealkiri">CONTACT</p>
+                </div>
+            </div>
+            <div class="paneel appearing FAQ">
+                <p id="pealkiri2">FAQ</p>
+                <div class="FAQ-küsimus">   
+                    <li>
+                        What kind of games are you making?
+                    </li>
+                    <div class="FAQ-vastus">
+                        <p>We have developed many different types of games over the years, from shooters to RPG-s. We are constantly trying to make every project better than the last one.</p>
+                    </div>
+                </div>
+                <br> 
+                <div class="FAQ-küsimus">  
+                    <li>
+                        I lost access to my account. What sould i do?
+                    </li>
+                    <div class="FAQ-vastus">
+                        <p>If you have forgotten your password please contact our customer support.</p>
+                    </div>
+                </div> 
+                <br>
+                <div class="FAQ-küsimus">  
+                    <li>
+                        What are your company's main values?
+                    </li>
+                    <div class="FAQ-vastus">
+                        <p>Precision and excellence have always been the main values at our company. These are also the traits that we expect from our employees. </p>
+                    </div>
+                </div>  
+                <br>
+                <div class="form-body">
+                    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Images/smiley.gif" alt="Smiley" width="32" height="32">
+                    <p id="pealkiri3">Contact us</p>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="401aab4f-9b18-487c-9160-8d2eaf32492d">
+                        <p>Enter your email</p>
+                        <input type="email" name="email" required>
+                        <p>Enter your name</p>
+                        <input type="text" name="First Name" required>
+                        <p>Enter your phone number</p>
+                        <input type="text" name="Phone Number" required>
+                        <p>Enter a message</p>
+                        <textarea name="message" required></textarea>
+                        <br>
+                        <button type="submit">Submit Form</button>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
