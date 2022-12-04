@@ -126,24 +126,33 @@ html, body {
 
     transition-duration: 0.2s;
 }
-.topbar img, .topbar a {
-    margin: 0;
+.topbar a {
+    display: inline-flex;
 
     height: 100%;
-    width: auto;
-}
-.topbar button {
-    display: inline;
-
-    float: right;
-
-    height: 100%;
-    width: 200px;
-
     margin: 0;
-    padding: 2px 4px;
 
     transition-duration: 0.4s;
+}
+.topbar a div {
+    margin:auto;
+}
+.topbar a:hover {
+    background-color: var(--darkgray);
+}
+.logo {
+    background: url("logo-Placeholder.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width:150px;
+}
+.topbar .right {
+    float: right;
+
+    width: 200px;
+
+    padding: auto auto;
 
     background-color: inherit;
 
@@ -152,8 +161,6 @@ html, body {
     font-weight: bold;
     font-size: 24px;
     color: var(--white);
-}
-
-.topbar button:hover {
-    background-color: var(--darkgray);
+    text-decoration: none;
+    align-items: center;
 }

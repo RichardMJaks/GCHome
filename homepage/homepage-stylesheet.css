@@ -5,6 +5,10 @@
     background-size:cover;
 }
 
+.main span {
+    color: var(--primary);
+    font-size: 68px;
+}
 /* Image Placeholder */
 .imgp {
     margin: 0;

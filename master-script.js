@@ -1,5 +1,4 @@
-// Peab seda ka referreerima?
-// Igatahes Richard M Jaks
+// Richard M Jaks
 window.scrollTo(0,0);
 $(".main div").animate({
     opacity: 1,
