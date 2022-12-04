@@ -6,9 +6,7 @@ function showSlide(n) {
     if (n < 1) {slideIndex = slides.length};
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
-        console.log('eemaldasin slaidi')
         dots[i].className = dots[i].className.replace(' activeDot', '');
-        console.log('deaktiveerisin ruudukesed')
     }
     slides[slideIndex-1].style.display = 'block';
     dots[slideIndex-1].className += ' activeDot';

@@ -1,14 +1,14 @@
-/* Background video */
+/* Main panel config */
 .bgvid {
     background-image: url("Images/background-video.webp");
     background-repeat: no-repeat;
     background-size:cover;
 }
-
 .main span {
     color: var(--primary);
     font-size: 68px;
 }
+
 /* Image Placeholder */
 .imgp {
     margin: 0;
@@ -16,25 +16,27 @@
 
     background-color: var(--light-primary);
 }
-/* Tervitus */
+/* Welcome Panel */
 #welcome {
     display: flex;
-    align-items: center;
-    justify-content: center;
 
     height: 10vh;
+
+    background-color: var(--darkgray);
+
+    align-items: center;
+    justify-content: center;
 
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
-
-    background-color: var(--darkgray);
 }
 #welcome span {
     color: var(--primary);
 }
-/* Mängude paneel */
+
+/* Game panel */
 #game-gallery {
     overflow: auto;
     white-space: nowrap;
@@ -95,7 +97,7 @@
     color: var(--black);
 }
 
-/* Uudiste paneel */
+/* news Panel */
 .news-block {
     display: inline-block;
 

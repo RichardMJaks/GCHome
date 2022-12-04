@@ -1,13 +1,15 @@
+/* Background image */
 .bg {
     background-image: url("images/we-are-placeholder.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: 0vw -120vh;
 }
+
+/* General config */
 h1 {
     text-align: center;
 }
-
 p {
     font-weight: 100;
     color: var(--white);
@@ -26,68 +28,93 @@ h2 {
     font-size: 48px;
 }
 
+/* Gallery */
 .gallery-heading {
+    margin-top: 30px;
+
     text-align: center;
     font-size: 15px;
-    margin-top: 30px;
 }
-
 .gallery-heading span {
     width: max-content;
-    font-weight: 600;
-    background-color: var(--darkergray);
+
     padding: 12px;
+
+    background-color: var(--darkergray);
+
+    font-weight: 600;
     font-size: 24px;
+
     border-radius: 10px;
+
     box-shadow: 0px 2px 10px black inset;
 }
 .slide {
     display: none;
 }
 .gallery {
-    background-color: #2f2f2f;
     display: block;
-    max-width: fit-content;
     position: relative;
+
+    max-width: fit-content;
+
     margin: 30px auto;
+
+    background-color: #2f2f2f;
+      
     box-shadow: 0px 2px 10px black;
 }
 .gallery-img {
     display: block;
+
     margin: auto;
+
     height: calc(60vw * 9 / 16);
 }
 .gallery-caption {
-    font-size: 20px;
-    font-weight: 200;
     position: absolute;
     bottom: 12px;
+
     width: 100%;
+
+    font-size: 20px;
+    font-weight: 200;
     text-align: center;
 }
 .gallery-caption span {
+    width: max-content;
+
+    padding: 6px 12px;
+
+    background-color: var(--primary);
+
+    color: var(--darkergray);
     text-transform: uppercase;
     font-weight: 700;
-    padding: 6px 12px;
+    
     border-radius: 10px;
-    color: var(--darkergray);
-    background-color: var(--primary);
-    width: max-content;
+    
     box-shadow: 0px 2px 10px black;
 
 }
 .previous, .next {
-    cursor: pointer;
     position: absolute;
     top: 50%;
+
     width: auto;
+
     margin-top: -22px;
     padding: 16px;
+
+    cursor: pointer;
+
     color: var(--white);
     font-weight: bold;
     font-size: 18px;
-    transition: 0.2s ease;
+    
     border-radius: 0 3px 3px 0;
+
+    transition: 0.2s ease;
     user-select: none;
 }
 .previous:hover, .next:hover {
@@ -95,19 +122,25 @@ h2 {
   }
 .next {
     right: 0;
+
     border-radius: 3px 0 0 3px;
 }
 .dots {
     text-align: center;
 }
 .dot {
-    cursor: pointer;
+    display: inline-block;
+
     height: 10px;
     width: 10px;
+
     margin: 0px 4px;
+
     background-color: #aeaeae;
+
+    cursor: pointer;    
     transition: background-color 0.6s ease;
-    display: inline-block;
+    
 }
 .dot:hover, .activeDot {
     background-color: var(--white);
@@ -115,8 +148,7 @@ h2 {
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
-}
-  
+}  
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}

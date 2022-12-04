@@ -30,6 +30,7 @@ html, body {
     font-style: normal;
     font-weight: bolder;
 }
+
 /* Wrappers */
 .wrapper {
     margin: 0;
@@ -147,7 +148,7 @@ html, body {
 
     width:150px;
 }
-.topbar .right {
+.right {
     float: right;
 
     width: 200px;
