@@ -1,94 +1,80 @@
-* {box-sizing: border-box}
-.start {
-    width: 80%;
-    margin: 50px auto 50px auto;
-    text-align: center;
-    font-size: 100px;
-    color: var(--white);
-}
-.main {
-    position: fixed;
-    z-index: 0;
-
-    /* Center title text to screen */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 100%;
-    width: 100%;
-
-    margin: 0;
-    padding: 0;
-
-    color: var(--white);
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-
-    background-color: var(--black);
-}
-.content-wrapper {
-    position: relative;
-    margin: 55% auto auto auto;
-    width: 80%;
-    padding-bottom: 80px;
-}
-.topbar {
-    z-index: 1;
-}
-.panel {
-    margin-bottom: 30px;
-    background-color: var(--darkgray);
-    color: var(--white);
-    padding: 100px;
-    border: 6px solid var(--lightgray);
-    text-align: justify;
-    text-justify: inter-word;
-    position: relative;
-    width: auto;
-    z-index: 0;
+.bg {
+    background-image: url("images/we-are-placeholder.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 0vw -120vh;
 }
 h1 {
     text-align: center;
-    font-style: italic;
-    text-decoration-line: underline overline;
-    text-decoration-color: var(--dark-secondary);
-    text-decoration-thickness: 3px;
 }
 
+p {
+    font-weight: 100;
+    color: var(--white);
+    text-align: center;
+}
+h2 {
+    background-color: var(--primary);
+
+    border-radius: 10px;
+
+    box-shadow: 0px 2px 10px black;
+
+    text-align: center;
+    color: var(--darkergray);
+    text-transform: uppercase;
+    font-size: 48px;
+}
 
 .gallery-heading {
     text-align: center;
     font-size: 15px;
     margin-top: 30px;
 }
+
+.gallery-heading span {
+    width: max-content;
+    font-weight: 600;
+    background-color: var(--darkergray);
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px black inset;
+}
 .slide {
     display: none;
 }
 .gallery {
     background-color: #2f2f2f;
-    width: auto;
     display: block;
-    max-width: 1000px;
+    max-width: fit-content;
     position: relative;
-    margin: auto;
+    margin: 30px auto;
+    box-shadow: 0px 2px 10px black;
 }
 .gallery-img {
     display: block;
     margin: auto;
-    width: 60%;
     height: calc(60vw * 9 / 16);
 }
 .gallery-caption {
-    color: var(--lightgray);
     font-size: 20px;
     font-weight: 200;
-    padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 12px;
     width: 100%;
     text-align: center;
+}
+.gallery-caption span {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: var(--darkergray);
+    background-color: var(--primary);
+    width: max-content;
+    box-shadow: 0px 2px 10px black;
+
 }
 .previous, .next {
     cursor: pointer;
@@ -100,7 +86,7 @@ h1 {
     color: var(--white);
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
+    transition: 0.2s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
 }

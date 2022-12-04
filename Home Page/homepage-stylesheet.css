@@ -97,6 +97,8 @@
 
     margin: 2vh;
 
+    border-radius: 10px;
+
     box-shadow: 0px 2px 10px black;
 }
 .news-block, .news-block .imgp, .news-block .imgp img, .news-content {    
